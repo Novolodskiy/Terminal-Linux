@@ -1,0 +1,289 @@
+1) Посмотреть где я
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free
+$ pwd
+/c/Users/admin/Desktop/Vadim/group_29_free
+
+2) Создать папку
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free
+$ mkdir DZ
+
+3) Зайти в папку
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free
+$ cd DZ
+
+4) Создать 3 папки
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ
+$ mkdir dz1 dz2 dz3
+
+5) Зайти в любоую папку
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ
+$ cd dz1
+
+6) Создать 5 файлов (3 txt, 2 json)
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz1
+$ touch 1.txt 2.txt 3.txt 1.json 2.json
+
+7) Создать 3 папки
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz1
+$ mkdir dza dzb dzc
+
+8) Вывести список содержимого папки
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz1
+$ ls -la
+total 4
+drwxr-xr-x 1 admin 197121 0 Jun 16 10:43 ./
+drwxr-xr-x 1 admin 197121 0 Jun 16 10:39 ../
+-rw-r--r-- 1 admin 197121 0 Jun 16 10:41 1.json
+-rw-r--r-- 1 admin 197121 0 Jun 16 10:41 1.txt
+-rw-r--r-- 1 admin 197121 0 Jun 16 10:41 2.json
+-rw-r--r-- 1 admin 197121 0 Jun 16 10:41 2.txt
+-rw-r--r-- 1 admin 197121 0 Jun 16 10:41 3.txt
+drwxr-xr-x 1 admin 197121 0 Jun 16 10:43 dza/
+drwxr-xr-x 1 admin 197121 0 Jun 16 10:43 dzb/
+drwxr-xr-x 1 admin 197121 0 Jun 16 10:43 dzc/
+
+9) + Открыть любой txt файл
+10) + написать туда что-нибудь, любой текст.
+11) + сохранить и выйти.
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz1
+$ vim 1.txt
+
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz1
+$ cat 1.txt
+Line1
+Line2
+Line3
+Line4
+Line5
+Line6
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+Line1
+Line2
+Line3
+Line4
+Line5
+Line6
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+Line1
+Line2
+Line3
+Line4
+Line5
+Line6
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+
+12) Выйти из папки на уровень выше
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz1
+$ cd ../
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz1
+$ mv 1.json ../dz2/1.json
+
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz1
+$ mv 1.txt ../dz2/1.txt
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ cp 1.json ../dz3/1.json
+
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ cp 1.txt ../dz3/1.txt
+
+15) Найти файл по имени
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ find ../ -name "2.json"
+../dz1/2.json
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ tail -f 1.txt
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+▒ривет ментор
+
+tail: 1.txt: file truncated
+Line1
+Line2
+Line3
+Line4
+Line5
+Line6
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+Line1
+Line2
+Line3
+Line4
+Line5
+Line6
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+Line1
+Line2
+Line3
+Line4
+Line5
+Line6
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+Hello!!!
+
+▒атя привет
+
+tail: 1.txt: file truncated
+Line1
+Line2
+Line3
+Line4
+Line5
+Line6
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+Line1
+Line2
+Line3
+Line4
+Line5
+Line6
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+Line1
+Line2
+Line3
+Line4
+Line5
+Line6
+Line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+line15
+Hello!!!
+Привет
+
+17) вывести несколько первых строк из текстового файла
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ head -3 1.txt
+Line1
+Line2
+Line3
+
+18) вывести несколько последних строк из текстового файла
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ tail -3 1.txt
+Hello!!!
+Привет
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ less 1.txt
+
+20) вывести дату и время
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ date
+Thu Jun 16 11:12:47 RTZ 2022
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ curl 162.55.220.72:5005/terminal-hw-request
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   283  100   283    0     0   3182      0 --:--:-- --:--:-- --:--:--  3215{
+  "Intro": "Hello!! This is your the first response from server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
+}
+
+admin@HOME-PC MINGW64 ~/Desktop/Vadim/group_29_free/DZ/dz2
+$ curl 162.55.220.72:5005/get_method?name=Dima&age=32"
+>
+> curl 162.55.220.72:5005/get_method?name=Dima&age=32"
+[1] 761
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    22  100    22    0     0    215      0 --:--:-- --:--:-- --:--:--   217[
+  "Dima",
+  null
+]
+
+[1]+  Done                    curl 162.55.220.72:5005/get_method?name=Dima
+
